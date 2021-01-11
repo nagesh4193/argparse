@@ -13,4 +13,4 @@ python:
 install:
   - python setup.py install
 
-script: pytest
+script: "PYTHON=python$TRAVIS_PYTHON_VERSION ./check"
